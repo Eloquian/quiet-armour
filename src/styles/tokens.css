@@ -1,0 +1,89 @@
+:root {
+  /* Light — Cream linen */
+  --cream: #FAF7F0;
+  --cream-deep: #F3EEE3;
+  --linen-line: #E4DAC8;
+  --violet: #534AB7;
+  --lilac: #7F77DD;
+  --soft-lilac: #AFA9EC;
+  --sage: #6E8B6F;
+  --sage-deep: #4F6B52;
+  --sage-pale: #9DB89C;
+  --gold: #C8A840;
+  --gold-deep: #A6862F;
+  --ink: #3A3450;
+  --ink-soft: #6B6480;
+
+  /* Dark — Dusky plum-navy */
+  --plum: #2E2640;
+  --plum-deep: #221C32;
+  --plum-line: #3C3454;
+  --moonlight: #EDE9F5;
+  --moonlight-dim: #B6AECB;
+  --d-violet: #9089E0;
+  --d-lilac: #B5AEEE;
+  --d-sage: #93B095;
+  --d-sage-pale: #B8CDB7;
+  --d-gold: #E3C778;
+
+  --radius-device: 28px;
+  --radius-panel: 16px;
+  --radius-pill: 999px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  background: #DCD6C8;
+}
+
+body {
+  font-family: 'Jost', sans-serif;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: inherit; }
+
+button { font-family: inherit; }
+
+/* ---------- Theme-scoped tokens ---------- */
+.theme-light {
+  --bg: var(--cream);
+  --bg-deep: var(--cream-deep);
+  --line: var(--linen-line);
+  --text: var(--ink);
+  --text-soft: var(--ink-soft);
+  --accent: var(--violet);
+  --accent-secondary: var(--lilac);
+  --accent-soft: var(--soft-lilac);
+  --calm: var(--sage);
+  --calm-deep: var(--sage-deep);
+  --calm-pale: var(--sage-pale);
+  --decorative: var(--gold);
+  --decorative-deep: var(--gold-deep);
+  --panel-line: rgba(110, 139, 111, 0.25);
+  --panel-bg: rgba(58, 52, 40, 0.03);
+  --panel-bg-hover: rgba(83, 74, 183, 0.05);
+  --hairline: rgba(58, 52, 40, 0.12);
+}
+
+.theme-dark {
+  --bg: var(--plum);
+  --bg-deep: var(--plum-deep);
+  --line: var(--plum-line);
+  --text: var(--moonlight);
+  --text-soft: var(--moonlight-dim);
+  --accent: var(--d-violet);
+  --accent-secondary: var(--d-lilac);
+  --accent-soft: var(--d-lilac);
+  --calm: var(--d-sage);
+  --calm-deep: var(--d-sage-pale);
+  --calm-pale: var(--d-sage-pale);
+  --decorative: var(--d-gold);
+  --decorative-deep: var(--d-gold);
+  --panel-line: rgba(181, 174, 203, 0.18);
+  --panel-bg: rgba(255, 255, 255, 0.035);
+  --panel-bg-hover: rgba(255, 255, 255, 0.055);
+  --hairline: rgba(181, 174, 203, 0.14);
+}

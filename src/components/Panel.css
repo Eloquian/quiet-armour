@@ -1,0 +1,40 @@
+.panel {
+  border-radius: var(--radius-panel);
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: var(--panel-bg);
+  border: 0.5px solid var(--panel-line);
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.panel[role='button'] {
+  cursor: pointer;
+}
+.panel[role='button']:hover,
+.panel[role='button']:focus-visible {
+  border-color: var(--accent);
+  background: var(--panel-bg-hover);
+  outline: none;
+}
+
+.panel .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.dot-violet { background: var(--accent); box-shadow: 0 0 10px var(--accent); }
+.dot-sage { background: var(--calm); box-shadow: 0 0 10px var(--calm); }
+.dot-gold { background: var(--decorative-deep); box-shadow: 0 0 10px var(--decorative-deep); }
+
+.panel .copy { min-width: 0; }
+.panel .copy p.t { font-size: 15px; font-weight: 400; margin-bottom: 2px; color: var(--text); }
+.panel .copy p.s { font-size: 12.5px; font-weight: 300; color: var(--text-soft); }
+.panel .copy p.f {
+  font-size: 11px;
+  font-weight: 400;
+  margin-top: 4px;
+  color: var(--calm-deep);
+}

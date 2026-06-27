@@ -1,0 +1,35 @@
+.settings-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+  border-bottom: 0.5px solid var(--hairline);
+}
+
+.settings-label {
+  font-size: 16px;
+  color: var(--text);
+}
+
+.mode-toggle {
+  display: flex;
+  background: var(--panel-bg);
+  border: 0.5px solid var(--panel-line);
+  border-radius: var(--radius-pill);
+  padding: 4px;
+}
+.mode-toggle button {
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  padding: 8px 18px;
+  border-radius: var(--radius-pill);
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: var(--text-soft);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.mode-toggle button.active {
+  background: var(--accent);
+  color: var(--bg);
+}

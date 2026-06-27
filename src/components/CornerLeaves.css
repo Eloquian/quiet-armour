@@ -1,0 +1,13 @@
+.corner-leaf {
+  position: absolute;
+  pointer-events: none;
+  z-index: 1;
+  width: 48%;
+  max-width: 230px;
+  height: auto;
+}
+.corner-leaf.tl { top: -6px; left: -6px; }
+.corner-leaf.br { bottom: -6px; right: -6px; transform: scaleX(-1) scaleY(-1); }
+
+.theme-light .corner-leaf { opacity: 0.95; }
+.theme-dark .corner-leaf { opacity: 0.88; filter: brightness(1.08) saturate(0.92); }
