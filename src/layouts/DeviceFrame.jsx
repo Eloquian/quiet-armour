@@ -18,9 +18,6 @@ export default function DeviceFrame() {
       <CornerLeaves />
 
       <header className="bar">
-        <button className="crest" aria-label="Home" onClick={() => { navigate('/'); closeMenu(); }}>
-          QA
-        </button>
         <button
           className={`hamburger ${menuOpen ? 'open' : ''}`}
           aria-label="Menu"

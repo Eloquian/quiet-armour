@@ -49,24 +49,6 @@ header.bar {
   padding: 0;
 }
 
-.crest {
-  position: absolute;
-  top: 22px;
-  left: 24px;
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 11px;
-  letter-spacing: 0.04em;
-  background: transparent;
-  cursor: pointer;
-  border: 1px solid var(--decorative-deep);
-  color: var(--decorative-deep);
-}
-
 .hamburger {
   position: absolute;
   top: 22px;
