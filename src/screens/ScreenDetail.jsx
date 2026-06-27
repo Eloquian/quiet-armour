@@ -1,5 +1,6 @@
 import { useParams, useNavigate, Navigate } from 'react-router-dom';
 import { getTile, getScreen } from '../data/tiles';
+import ContentBlocks from '../components/ContentBlocks';
 import './ScreenShared.css';
 
 export default function ScreenDetail() {
@@ -21,10 +22,14 @@ export default function ScreenDetail() {
       </div>
 
       <div className="screen-body-copy">
-        <p className="placeholder-note">
-          Full copy for this card is on its way — it'll live here once the
-          source content is in.
-        </p>
+        {screen.body ? (
+          <ContentBlocks blocks={screen.body} />
+        ) : (
+          <p className="placeholder-note">
+            Full copy for this card is on its way — it'll live here once the
+            source content is in.
+          </p>
+        )}
       </div>
 
       <button className="back-link" onClick={() => navigate(`/tile/${tile.id}`)}>

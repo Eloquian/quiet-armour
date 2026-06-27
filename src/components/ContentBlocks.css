@@ -1,0 +1,77 @@
+.content-blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.cb-heading {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text);
+  margin-top: 6px;
+}
+
+.cb-p {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.7;
+  color: var(--text);
+}
+
+.cb-quote {
+  border-left: 2px solid var(--accent-soft);
+  padding-left: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.cb-quote p {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.7;
+  color: var(--text);
+}
+
+.cb-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 18px;
+}
+.cb-list li {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: var(--text);
+  position: relative;
+}
+.cb-list li::before {
+  content: '—';
+  position: absolute;
+  left: -18px;
+  color: var(--calm-deep);
+}
+
+.cb-table-wrap {
+  overflow-x: auto;
+}
+.cb-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+.cb-table th, .cb-table td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 0.5px solid var(--hairline);
+  color: var(--text);
+  font-weight: 300;
+}
+.cb-table th {
+  font-weight: 500;
+  color: var(--calm-deep);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}

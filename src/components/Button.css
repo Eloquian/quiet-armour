@@ -7,6 +7,10 @@
   cursor: pointer;
   transition: filter 0.2s ease, background 0.2s ease;
   width: 100%;
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none;
 }
 
 .btn-primary {
