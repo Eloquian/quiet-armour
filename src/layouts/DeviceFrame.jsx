@@ -48,9 +48,6 @@ export default function DeviceFrame() {
             <span className="num">{tile.num}</span>
           </button>
         ))}
-        <button className="menu-item" onClick={() => { navigate('/settings'); closeMenu(); }}>
-          <span>Settings</span>
-        </button>
         <div className="menu-foot">quiet-armour.netlify.app</div>
       </nav>
     </div>

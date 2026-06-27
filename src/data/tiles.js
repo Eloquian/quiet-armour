@@ -174,7 +174,6 @@ export const tiles = [
           { type: 'p', text: 'Necklines, mostly — that\'s almost the whole game. Anything that already has movement or interest at the collar is probably fine as-is. Anything that depends on a particular chest shape to look right is the thing we put aside, not because it\'s wrong, but because it was built for a body you don\'t currently have, and that\'s a fact about the garment, not about you.' },
           { type: 'heading', text: 'One appointment, not an audit' },
           { type: 'p', text: 'This isn\'t a referendum on your wardrobe. We\'re not deciding what kind of woman you are by what\'s hanging in there. We\'re sorting clothes into "wear this Monday" and "revisit later," and that\'s the entire stakes of the exercise.' },
-          { type: 'button', label: 'Book closet call with Michelle', href: '#' },
         ],
       },
       {

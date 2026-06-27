@@ -5,7 +5,6 @@ import Home from './screens/Home';
 import TileDetail from './screens/TileDetail';
 import ScreenDetail from './screens/ScreenDetail';
 import LinksScreen from './screens/LinksScreen';
-import Settings from './screens/Settings';
 
 export default function App() {
   return (
@@ -16,7 +15,6 @@ export default function App() {
           <Route path="/tile/:tileId" element={<TileDetail />} />
           <Route path="/tile/:tileId/:screenSlug" element={<ScreenDetail />} />
           <Route path="/links" element={<LinksScreen />} />
-          <Route path="/settings" element={<Settings />} />
         </Route>
       </Routes>
     </ThemeProvider>
