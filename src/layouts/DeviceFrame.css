@@ -109,6 +109,20 @@ header.bar {
   visibility: visible;
 }
 
+.menu-mode-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  margin-bottom: 12px;
+  border-bottom: 0.5px solid var(--hairline);
+}
+.menu-mode-label {
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  color: var(--text-soft);
+}
+
 .menu-item {
   font-size: 22px;
   font-weight: 300;

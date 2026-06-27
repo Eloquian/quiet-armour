@@ -51,3 +51,7 @@ h1.title {
   flex-direction: column;
   gap: 14px;
 }
+
+.home-screen.screen {
+  padding-top: 8px;
+}

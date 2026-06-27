@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Outlet, useNavigate } from 'react-router-dom';
 import CornerLeaves from '../components/CornerLeaves';
+import ModeToggle from '../components/ModeToggle';
 import { useTheme } from '../context/ThemeContext';
 import { tiles } from '../data/tiles';
 import './DeviceFrame.css';
@@ -33,6 +34,10 @@ export default function DeviceFrame() {
       </main>
 
       <nav className={`menu-panel ${menuOpen ? 'open' : ''}`}>
+        <div className="menu-mode-row">
+          <span className="menu-mode-label">Appearance</span>
+          <ModeToggle />
+        </div>
         {tiles.map((tile) => (
           <button
             key={tile.id}
