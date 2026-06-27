@@ -49,6 +49,32 @@ export default function ContentBlocks({ blocks }) {
                 </table>
               </div>
             );
+          case 'timeline':
+            return (
+              <ol className="cb-timeline" key={i}>
+                {block.phases.map((phase, j) => (
+                  <li className="cb-timeline-item" key={j}>
+                    <span className="cb-timeline-marker">
+                      <span className="cb-timeline-dot" />
+                      {j < block.phases.length - 1 && <span className="cb-timeline-rail" />}
+                    </span>
+                    <div className="cb-timeline-content">
+                      <p className="cb-timeline-range">{phase.range}</p>
+                      <p className="cb-timeline-title">{phase.title}</p>
+                      {phase.summary && <p className="cb-timeline-summary">{phase.summary}</p>}
+                      {phase.bullets && (
+                        <ul className="cb-timeline-bullets">
+                          {phase.bullets.map((b, k) => (
+                            <li key={k}>{b}</li>
+                          ))}
+                        </ul>
+                      )}
+                      {phase.capacity && <p className="cb-timeline-capacity">Capacity: {phase.capacity}</p>}
+                    </div>
+                  </li>
+                ))}
+              </ol>
+            );
           case 'button':
             return (
               <Button key={i} variant={block.variant || 'primary'} href={block.href}>

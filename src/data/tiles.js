@@ -16,32 +16,41 @@ export const tiles = [
         subtitle: 'A gentle sketch, not a contract.',
         body: [
           { type: 'p', text: 'Your recovery in three acts. A gentle sketch, not a contract. You and your body get to move the sliders.' },
-          { type: 'heading', text: 'Act I · The Specimen Is Horizontal' },
-          { type: 'p', text: 'Roughly: surgery day to the end of Week 2. Surgical recovery is the whole job.' },
-          { type: 'list', items: [
-            'Pain is present and variable; not dramatic, but real.',
-            'Getting dressed, showering and one small outing can count as a full day.',
-            'Work brain is offline; messages can wait or be handled by someone else.',
+          { type: 'timeline', phases: [
+            {
+              range: 'Surgery day – end of Week 2',
+              title: 'Act I · The Specimen Is Horizontal',
+              summary: 'Surgical recovery is the whole job.',
+              bullets: [
+                'Pain is present and variable; not dramatic, but real.',
+                'Getting dressed, showering and one small outing can count as a full day.',
+                'Work brain is offline; messages can wait or be handled by someone else.',
+              ],
+              capacity: '"Variable, possibly none." A good day is a bonus, not a new standard.',
+            },
+            {
+              range: 'Weeks 3–6',
+              title: 'Act II · The Mannequin Has Opinions',
+              bullets: [
+                'Back "in the room" in a light way — mornings only at first.',
+                'Afternoons are for rest, naps, or being decorative; mistakes are more likely when you push.',
+                'Calls and meetings need notice and a recovery window afterwards.',
+                'Quality is available in short bursts. Heroics are not.',
+              ],
+              capacity: 'Around 3–4 focused hours a day, with breaks you actually take.',
+            },
+            {
+              range: 'Weeks 7–12',
+              title: 'Act III · The Final Fitting',
+              bullets: [
+                'A genuine return, building week by week rather than flipping a switch.',
+                'Strategic thinking and actual opinions are back, but run through a body that is still healing.',
+                'Project work resumes at real (not pre-surgery) capacity.',
+                'The pace is yours to set, not the spreadsheet\'s.',
+              ],
+              capacity: '4–5 hours most days, with flex for flare-ups, medical appointments and life.',
+            },
           ] },
-          { type: 'p', text: 'Capacity: "Variable, possibly none." A good day is a bonus, not a new standard.' },
-          { type: 'heading', text: 'Act II · The Mannequin Has Opinions' },
-          { type: 'p', text: 'Roughly: Weeks 3–6.' },
-          { type: 'list', items: [
-            'Back "in the room" in a light way — mornings only at first.',
-            'Afternoons are for rest, naps, or being decorative; mistakes are more likely when you push.',
-            'Calls and meetings need notice and a recovery window afterwards.',
-            'Quality is available in short bursts. Heroics are not.',
-          ] },
-          { type: 'p', text: 'Capacity: around 3–4 focused hours a day, with breaks you actually take.' },
-          { type: 'heading', text: 'Act III · The Final Fitting' },
-          { type: 'p', text: 'Roughly: Weeks 7–12.' },
-          { type: 'list', items: [
-            'A genuine return, building week by week rather than flipping a switch.',
-            'Strategic thinking and actual opinions are back, but run through a body that is still healing.',
-            'Project work resumes at real (not pre-surgery) capacity.',
-            'The pace is yours to set, not the spreadsheet\'s.',
-          ] },
-          { type: 'p', text: 'Capacity: 4–5 hours most days, with flex for flare-ups, medical appointments and life.' },
         ],
       },
       {
